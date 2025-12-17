@@ -1,3 +1,81 @@
+/* ===== GLOBAL RESET (SAFE) ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+  background-color: #ffffff;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f7f7f7;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #222;
+  color: white;
+  border-radius: 6px;
+}
+
+.hero button:hover {
+  background-color: #444;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+  background-color: #222;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== SECTIONS (ABOUT / RESUME / CONTACT) ===== */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+
 /* Projects grid */
 .projects-grid {
   display: grid;
