@@ -133,3 +133,19 @@ section h2 {
   color: #555;
   line-height: 1.5;
 }
+
+/* ===== RESUME BUTTON ===== */
+.resume-button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 24px;
+  background-color: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.resume-button:hover {
+  background-color: #444;
+}
