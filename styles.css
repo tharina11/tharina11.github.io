@@ -196,23 +196,38 @@ section h2 {
   text-decoration: underline;
 }
 
-.social-links {
-  display: flex;              
-  justify-content: center;    
-  align-items: center;        
-  gap: 20px;                 
-  margin-top: 25px;           
+/* ===== CONNECT / SOCIAL LINKS SECTION ===== */
+#connect {
+  max-width: 900px;       /* match Publications width */
+  margin: 0 auto;         /* center container horizontally */
+  padding: 60px 20px;     /* consistent spacing */
+  text-align: left;       /* headings and text left-aligned */
 }
 
-.social-links a {
+#connect .social-links {
+  display: flex;
+  justify-content: center;  /* center links horizontally inside section */
+  gap: 20px;                /* space between links */
+  margin-top: 20px;         /* spacing below heading */
+}
+
+#connect .social-links a {
   text-decoration: none;
   font-weight: 500;
   color: #222;
   border-bottom: 2px solid transparent;
 }
 
-.social-links a:hover {
+#connect .social-links a:hover {
   border-bottom: 2px solid #222;
+}
+
+/* Responsive: stack links on small screens */
+@media (max-width: 500px) {
+  #connect .social-links {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
 section {
