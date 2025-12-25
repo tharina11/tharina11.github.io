@@ -166,3 +166,30 @@ section h2 {
   border-radius: 20px;
   font-weight: 500;
 }
+
+/* ===== PUBLICATIONS ===== */
+#publications {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.publications-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.publications-list li {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.publications-list a {
+  margin-left: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.publications-list a:hover {
+  text-decoration: underline;
+}
