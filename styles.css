@@ -1,101 +1,96 @@
-/* ===== GLOBAL RESET (SAFE) ===== */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #222;
-  background-color: #ffffff;
-}
-
 /* ===== HERO SECTION ===== */
 .hero {
   width: 100%;
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;         /* more top padding for breathing space */
   background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero h1 {
   font-size: 3rem;
-  margin: 0;
+  margin: 0 0 15px 0;           /* bottom margin for spacing */
 }
 
 .hero p {
   font-size: 1.2rem;
-  margin: 10px 0 20px;
+  margin: 0 0 25px 0;           /* more bottom margin before button */
 }
 
 .hero button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 1rem;
   cursor: pointer;
   border: none;
   background-color: #222;
   color: white;
   border-radius: 6px;
+  margin-top: 10px;
 }
 
 .hero button:hover {
   background-color: #444;
 }
 
-/* ===== NAVIGATION ===== */
-nav {
-  background-color: #222;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 10px 0;
+/* ===== SOCIAL LINKS INSIDE HERO ===== */
+.hero .social-links {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;             /* more space below button */
 }
 
-nav li {
-  margin: 0 15px;
-}
-
-nav a {
-  color: #ffffff;
+.hero .social-links a {
   text-decoration: none;
   font-weight: 500;
+  color: #222;
+  border-bottom: 2px solid transparent;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.hero .social-links a:hover {
+  border-bottom: 2px solid #222;
+}
+
+@media (max-width: 500px) {
+  .hero .social-links {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
 /* ===== SECTIONS (ABOUT / RESUME / CONTACT) ===== */
-/* ===== CONTENT SECTIONS ONLY ===== */
 #about,
 #resume,
 #contact {
-  padding: 60px 20px;
+  padding: 80px 20px;           /* more breathing space around sections */
   max-width: 900px;
   margin: 0 auto;
 }
 
+section h2 {
+  margin-bottom: 25px;           /* space between heading and content */
+  text-align: left;
+}
+
 /* ===== PROJECTS SECTION ===== */
 #projects {
-  padding: 60px 40px;
+  padding: 80px 40px;            /* larger padding for projects */
   max-width: 1200px;
   margin: 0 auto;
 }
 
-section h2 {
-  margin-top: 0;
-}
-
-
-/* Projects grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
+  gap: 30px;                     /* more gap between cards */
   margin-top: 30px;
 }
 
-/* Card */
+/* ===== PROJECT CARD ===== */
 .project-card {
   background: #ffffff;
   border-radius: 12px;
@@ -109,7 +104,6 @@ section h2 {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
-/* Image */
 .project-card img {
   width: 100%;
   height: 160px;
@@ -117,7 +111,6 @@ section h2 {
   border-radius: 8px;
 }
 
-/* Title link */
 .project-card a {
   text-decoration: none;
   color: #222;
@@ -128,27 +121,10 @@ section h2 {
   font-size: 1.1rem;
 }
 
-/* Description */
 .project-card p {
   font-size: 0.95rem;
   color: #555;
   line-height: 1.5;
-}
-
-/* ===== RESUME BUTTON ===== */
-.resume-button {
-  display: inline-block;
-  margin-top: 16px;
-  padding: 12px 24px;
-  background-color: #222;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-}
-
-.resume-button:hover {
-  background-color: #444;
 }
 
 /* ===== PROJECT TOOLS TAGS ===== */
@@ -168,9 +144,25 @@ section h2 {
   font-weight: 500;
 }
 
+/* ===== RESUME BUTTON ===== */
+.resume-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.resume-button:hover {
+  background-color: #444;
+}
+
 /* ===== PUBLICATIONS ===== */
 #publications {
-  padding: 60px 20px;
+  padding: 80px 20px;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -194,32 +186,3 @@ section h2 {
 .publications-list a:hover {
   text-decoration: underline;
 }
-
-.social-links {
-  display: flex;              
-  justify-content: center;    
-  align-items: center;        
-  gap: 20px;                 
-  margin-top: 25px;           
-}
-
-.social-links a {
-  text-decoration: none;
-  font-weight: 500;
-  color: #222;
-  border-bottom: 2px solid transparent;
-}
-
-.social-links a:hover {
-  border-bottom: 2px solid #222;
-}
-
-section {
-  text-align: left;
-}
-
-section h2 {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
