@@ -8,6 +8,7 @@ body {
 
 /* ===== HERO SECTION ===== */
 .hero {
+  width: 100%;
   text-align: center;
   padding: 100px 20px;
   background-color: #f7f7f7;
@@ -195,10 +196,11 @@ section h2 {
 }
 
 .social-links {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  display: flex;              
+  justify-content: center;    
+  align-items: center;        
+  gap: 20px;                 
+  margin-top: 25px;           
 }
 
 .social-links a {
