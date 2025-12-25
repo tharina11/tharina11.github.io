@@ -149,3 +149,20 @@ section h2 {
 .resume-button:hover {
   background-color: #444;
 }
+
+/* ===== PROJECT TOOLS TAGS ===== */
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 8px;
+}
+
+.tool {
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  background-color: #f1f1f1;
+  color: #333;
+  border-radius: 20px;
+  font-weight: 500;
+}
