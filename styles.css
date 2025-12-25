@@ -239,3 +239,60 @@ section h2 {
   margin-bottom: 20px;
 }
 
+/* ===== MOBILE RESPONSIVE STYLES ===== */
+@media (max-width: 600px) {
+
+  /* ===== Section padding ===== */
+  #about, #resume, #projects, #publications, #connect, #contact {
+    padding: 30px 15px;  /* reduce padding for small screens */
+  }
+
+  /* ===== Hero adjustments ===== */
+  .hero h1 {
+    font-size: 2rem;      /* smaller heading */
+  }
+
+  .hero p {
+    font-size: 1rem;      /* smaller subtext */
+  }
+
+  .hero button {
+    padding: 8px 16px;    /* smaller button */
+    font-size: 0.9rem;
+  }
+
+  /* ===== Projects grid ===== */
+  .projects-grid {
+    grid-template-columns: 1fr;  /* single column on mobile */
+    gap: 20px;
+  }
+
+  /* ===== Social links ===== */
+  .social-links {
+    flex-direction: column;  /* stack links vertically */
+    gap: 12px;               /* smaller spacing */
+  }
+
+  /* ===== Tool tags ===== */
+  .tools {
+    justify-content: flex-start; /* wrap and left-align */
+    gap: 6px;                    /* smaller gap between tags */
+  }
+
+  /* ===== Resume button ===== */
+  .resume-button {
+    padding: 10px 20px;      /* smaller button */
+    font-size: 0.9rem;
+  }
+
+  /* ===== Headings ===== */
+  section h2 {
+    font-size: 1.5rem;       /* slightly smaller headings */
+    margin-bottom: 15px;     /* reduce spacing below heading */
+  }
+
+  /* ===== Publications list ===== */
+  .publications-list li {
+    font-size: 0.9rem;       /* smaller text */
+  }
+}
