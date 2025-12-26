@@ -296,3 +296,37 @@ section h2 {
     font-size: 0.9rem;       /* smaller text */
   }
 }
+
+/* ===== PROJECT TABS ===== */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.tab-btn {
+  padding: 8px 14px;
+  border: none;
+  background-color: #eaeaea;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.tab-btn.active {
+  background-color: #222;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 15px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content iframe {
+  border-radius: 8px;
+}
