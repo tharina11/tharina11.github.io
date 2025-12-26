@@ -92,9 +92,35 @@
 
     <div class="projects-grid">
 
+          <div class="project-card">
+
+      <h3>Investment Portfolio Visualization</h3>
+      <p>Interactive Tableau dashboard tracking portfolio performance and asset allocation.</p>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab-btn active" onclick="openTab(event, 'tableau1')">Dashboard</button>
+        <button class="tab-btn" onclick="openTab(event, 'code1')">Data Import Code</button>
+      </div>
+
+      <!-- Tab content -->
+      <div class="tab-content active" id="tableau1">
+        <a href="https://public.tableau.com/app/profile/tharindu.abeysinghe/viz/InvestmentPortfolioMonitoringDashboard/OverallSummary" target="_blank">
+          <img src="images/investments.png" alt="Tableau Dashboard Preview">
+        </a>
+      </div>
+
+      <div class="tab-content" id="code1">
+        <a href="https://github.com/tharina11/Import-and-Prepare-data-for-investing-Dashboard" target="_blank">
+          View data importing code on GitHub
+        </a>
+      </div>
+
+    </div>
+
       <div class="project-card">
         <a href="https://public.tableau.com/app/profile/tharindu.abeysinghe/viz/SuperstoreSales_17630981449850/ExecutiveOverview" target="_blank">
-          <img src="images/investment.png" alt="Superstore Sales Visualization">
+          <img src="images/superstore.png" alt="Superstore Sales Visualization">
           <h3>Superstore Sales Visualization</h3>
         </a>
         <div class="tools">
@@ -255,6 +281,19 @@ Machine Learning Classifiers</em>.
       document.getElementById(id).scrollIntoView({ behavior: "smooth" });
     }
   </script>
+
+<script>
+function openTab(evt, tabId) {
+  const card = evt.target.closest('.project-card');
+
+  card.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  card.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+
+  card.querySelector('#' + tabId).classList.add('active');
+  evt.target.classList.add('active');
+}
+</script>
+
 
 </body>
 </html>
