@@ -118,14 +118,6 @@ section h2 {
   /* remove margin: 0 auto; so grid controls positioning */
 }
 
-
-/* Card */
-.project-card {
-  max-width: 360px;   /* keeps previous card size */
-  width: 100%;
-  margin: 0 auto;
-}
-
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
