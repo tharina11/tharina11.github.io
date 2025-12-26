@@ -91,31 +91,18 @@ section h2 {
 /* Projects grid */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns desktop */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
   margin-top: 30px;
-  justify-items: center; /* center cards in grid cells */
-}
-
-/* Tablet */
-@media (max-width: 900px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .projects-grid {
-    grid-template-columns: 1fr; /* 1 column */
-  }
 }
 
 /* Card */
 .project-card {
-  width: 100%;
-  max-width: 360px;  /* keeps card size */
-  /* remove margin: 0 auto; so grid controls positioning */
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
@@ -129,7 +116,6 @@ section h2 {
   height: 160px;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 12px;
 }
 
 /* Title link */
@@ -181,49 +167,6 @@ section h2 {
   color: #333;
   border-radius: 20px;
   font-weight: 500;
-}
-
-/* ===== PROJECT TABS ===== */
-.tabs {
-  display: flex;
-  gap: 10px;
-  margin: 15px 0;
-}
-
-.tab-btn {
-  padding: 8px 14px;
-  border: none;
-  background-color: #eaeaea;
-  cursor: pointer;
-  border-radius: 6px;
-  font-size: 0.9rem;
-}
-
-.tab-btn.active {
-  background-color: #222;
-  color: white;
-}
-
-.tab-content {
-  width: 100%;
-  overflow: hidden;
-}
-
-
-.tab-content.active {
-  display: block;
-}
-
-.tab-content iframe {
-  border-radius: 8px;
-}
-
-.tab-image {
-  width: 100%;
-  height: 160px;        /* same visual weight as project image */
-  object-fit: cover;   /* crop instead of stretching */
-  border-radius: 8px;
-  margin: 12px 0;
 }
 
 /* ===== PUBLICATIONS ===== */
@@ -318,6 +261,11 @@ section h2 {
     font-size: 0.9rem;
   }
 
+  /* ===== Projects grid ===== */
+  .projects-grid {
+    grid-template-columns: 1fr;  /* single column on mobile */
+    gap: 20px;
+  }
 
   /* ===== Social links ===== */
   .social-links {
