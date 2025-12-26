@@ -89,24 +89,28 @@ section h2 {
 
 
 /* Projects grid */
+/* Projects grid */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* desktop: 3 columns */
   gap: 24px;
   margin-top: 30px;
 }
 
+/* Tablet */
 @media (max-width: 900px) {
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr); /* tablets */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
   }
 }
 
+/* Mobile */
 @media (max-width: 600px) {
   .projects-grid {
-    grid-template-columns: 1fr; /* phones */
+    grid-template-columns: 1fr; /* 1 column */
   }
 }
+
 
 /* Card */
 .project-card {
@@ -315,13 +319,6 @@ section h2 {
     font-size: 0.9rem;
   }
 
-  /* ===== Projects grid ===== */
-  .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 projects per row */
-  gap: 24px;
-  margin-top: 30px;
-}
 
   /* ===== Social links ===== */
   .social-links {
