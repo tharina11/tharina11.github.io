@@ -116,6 +116,7 @@ section h2 {
   height: 160px;
   object-fit: cover;
   border-radius: 8px;
+  margin-bottom: 12px;
 }
 
 /* Title link */
@@ -135,6 +136,17 @@ section h2 {
   color: #555;
   line-height: 1.5;
 }
+
+.tab-image {
+  width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin: 16px 0;
+  background-color: #f7f7f7;
+  padding: 8px;
+}
+
 
 /* ===== RESUME BUTTON ===== */
 .resume-button {
